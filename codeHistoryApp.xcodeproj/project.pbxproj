@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9E3CD9062DE89ED60022AC36 /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CD9022DE89ED60022AC36 /* ChoiceTextView.swift */; };
+		9E3CD9082DE89ED60022AC36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CD9042DE89ED60022AC36 /* ContentView.swift */; };
+		9EDA277C2DEF59F200FD815B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA277B2DEF59F200FD815B /* WelcomeView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		9E3CD9022DE89ED60022AC36 /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
+		9E3CD9042DE89ED60022AC36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EAF1C3E2DDA6A55002BE975 /* codeHistoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeHistoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDA277B2DEF59F200FD815B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -29,11 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9E3CD9112DE8A0770022AC36 /* New Group */ = {
+		9E3CD9112DE8A0770022AC36 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9E3CD9022DE89ED60022AC36 /* ChoiceTextView.swift */,
+				9E3CD9042DE89ED60022AC36 /* ContentView.swift */,
+				9EDA277B2DEF59F200FD815B /* WelcomeView.swift */,
 			);
-			path = "New Group";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9EAF1C352DDA6A55002BE975 = {
@@ -41,7 +53,7 @@
 			children = (
 				9EAF1C402DDA6A55002BE975 /* codeHistoryApp */,
 				9EAF1C3F2DDA6A55002BE975 /* Products */,
-				9E3CD9112DE8A0770022AC36 /* New Group */,
+				9E3CD9112DE8A0770022AC36 /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3CD9062DE89ED60022AC36 /* ChoiceTextView.swift in Sources */,
+				9EDA277C2DEF59F200FD815B /* WelcomeView.swift in Sources */,
+				9E3CD9082DE89ED60022AC36 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
