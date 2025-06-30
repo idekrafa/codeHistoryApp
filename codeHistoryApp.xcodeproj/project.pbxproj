@@ -11,6 +11,7 @@
 		9E3CD9082DE89ED60022AC36 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CD9042DE89ED60022AC36 /* GameView.swift */; };
 		9E4B6C8B2E10945C00DA9252 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B6C8A2E10945C00DA9252 /* QuestionView.swift */; };
 		9E6354ED2DFCC6F50030EABD /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6354EC2DFCC6F50030EABD /* BottomTextView.swift */; };
+		9E9AD82D2E12E615009C02D8 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD82C2E12E615009C02D8 /* ScoreView.swift */; };
 		9EDA277C2DEF59F200FD815B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA277B2DEF59F200FD815B /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,7 @@
 		9E3CD9042DE89ED60022AC36 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		9E4B6C8A2E10945C00DA9252 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		9E6354EC2DFCC6F50030EABD /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
+		9E9AD82C2E12E615009C02D8 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		9EAF1C3E2DDA6A55002BE975 /* codeHistoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeHistoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDA277B2DEF59F200FD815B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +52,7 @@
 				9EDA277B2DEF59F200FD815B /* WelcomeView.swift */,
 				9E6354EC2DFCC6F50030EABD /* BottomTextView.swift */,
 				9E4B6C8A2E10945C00DA9252 /* QuestionView.swift */,
+				9E9AD82C2E12E615009C02D8 /* ScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				9E4B6C8B2E10945C00DA9252 /* QuestionView.swift in Sources */,
 				9E6354ED2DFCC6F50030EABD /* BottomTextView.swift in Sources */,
+				9E9AD82D2E12E615009C02D8 /* ScoreView.swift in Sources */,
 				9E3CD9062DE89ED60022AC36 /* ChoiceTextView.swift in Sources */,
 				9EDA277C2DEF59F200FD815B /* WelcomeView.swift in Sources */,
 				9E3CD9082DE89ED60022AC36 /* GameView.swift in Sources */,

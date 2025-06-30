@@ -9,29 +9,35 @@ import SwiftUI
 
 struct GameView: View {
     
-//This is the place where I'll place the variables and all the other info
-//   let question = Question(
-//    questionText: "What was the first computer bug?",
-//    possibleAnswers: ["Ant", "Beatle", "Moth", "Fly"],
-//    correctAnswerIndex: 2)
-    
     @StateObject var viewModel = GameViewModel()
+    @State private var showScore = false
+    
 //
     var body: some View {
-        ZStack {
-            GameColor.main.ignoresSafeArea()
-            VStack {
-                Text(viewModel.questionProgressText)
-                    .font(.callout)
-                    .multilineTextAlignment(.leading)
-                    .padding()
-                QuestionView(question: viewModel.currentQuestion)
+        NavigationStack {
+            ZStack {
+                GameColor.main.ignoresSafeArea()
+                VStack {
+                    Text(viewModel.questionProgressText)
+                        .font(.callout)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                    QuestionView(question: viewModel.currentQuestion)
+                }
+                .padding()
+                .foregroundColor(.white)
+                .navigationBarHidden(true)
+                .environmentObject(viewModel)
+                .onChange(of: viewModel.gameIsOver) { isOver in if isOver {
+                    showScore = true
+                }
+                }
+                .navigationDestination(isPresented: $showScore) {
+                    ScoreView(viewModel: ScoreViewModel (correctGuesses: viewModel.correctGuesses, incorrectGuesses: viewModel.incorrectGuesses))
+                }
+                
             }
-            .padding()
-            .foregroundColor(.white)
-            .navigationBarHidden(true)
-            .environmentObject(viewModel)
-
+            
         }
     }
 
